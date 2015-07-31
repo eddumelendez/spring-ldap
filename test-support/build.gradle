@@ -13,5 +13,7 @@ dependencies {
 
     compile apachedsDependencies
 
+    test apacheds2Dependencies
+
     provided "junit:junit:$junitVersion"
 }

@@ -4,11 +4,12 @@ apply plugin: 'propdeps'
 sourceCompatibility = '1.6'
 targetCompatibility = '1.6'
 
-ext.apacheDsVersion = '1.5.5'
-ext.springVersion = '3.2.13.RELEASE'
+ext.apacheDsVersion = '1.5.7'
+ext.apacheDs2Version = '2.0.0-M20'
+ext.springVersion = '4.2.0.RELEASE'
 ext.springDataVersion = '1.10.0.RELEASE'
 ext.springBatchVersion = '2.0.4.RELEASE'
-ext.junitVersion =  '4.11'
+ext.junitVersion =  '4.12'
 ext.commonsIoVersion = '2.4'
 ext.commonsPoolVersion = '1.6'
 ext.commonsLangVersion = '2.6'
@@ -38,6 +39,14 @@ ext.apachedsDependencies = [
          "org.apache.directory.server:apacheds-protocol-ldap:$apacheDsVersion",
          "org.apache.directory.server:apacheds-server-jndi:$apacheDsVersion",
          'org.apache.directory.shared:shared-ldap:0.9.15'
+]
+
+ext.apacheds2Dependencies = [
+        "org.apache.directory.server:apacheds-core:$apacheDs2Version",
+        "org.apache.directory.server:apacheds-protocol-shared:$apacheDs2Version",
+        "org.apache.directory.server:apacheds-protocol-ldap:$apacheDs2Version",
+        "org.apache.directory.server:apacheds-server-jndi:$apacheDs2Version",
+        'org.apache.directory.shared:shared-ldap:0.9.15'
 ]
 
 repositories {
